@@ -6,12 +6,49 @@
     <title>COMP2068 - Impress Demo</title>
     <!-- CSS Section-->
     <link href="css/game.css" rel="stylesheet" />
+
 </head>
-<body>
+<body onload="main();">
+    <div id="impress">
+        <!--SLIDE 1-->
+        <div id="1" class="step slide">
+            <div class="slide-text">
+            <p> Theres a thing over there. do the thing?</p>
+            <p><a href ="#2"> DO</a> the thing</p>
+            <p><a href="#3"> DONT</a> do the thing</p>
+                </div>
+        </div>
+        <!--SLIDE 2-->
+        <div id="2" class="step slide" data-x="1500">
+            <div class="slide-text">
+                <p> You did the thing. Millions are dead/</p>
+                <div class=" menu"><a href="#1">START OVER</a></div>
+            </div>
+        </div>
+        <!--SLIDE 3-->
+        <div id="3" class="step slide" data-x="-1500">
+            <div class="slide-text">
+                <p> You did not do the thing. Millions are alive</p>
+                <p> You are a hero.</p>
+                <div class=" menu"><a href="#1">START OVER</a></div>
+            </div>
+        </div>
 
 
+
+
+
+
+
+
+
+
+    </div>
 
     <!--Javascript Section-->
+    <script src="Scripts/lib/impress.js"></script>
     <script src="Scripts/lib/game.js"></script>
+
+
 </body>
 </html>
